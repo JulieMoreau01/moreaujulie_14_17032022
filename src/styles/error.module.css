@@ -1,0 +1,11 @@
+p.errorMessage {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+p.loginError {
+  color: red;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
