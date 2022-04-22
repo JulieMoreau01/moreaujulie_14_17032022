@@ -1,23 +1,29 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import UseModal from 'modal-openc-library/dist/UseModal'
 import Modal from 'modal-openc-library/dist/Modal'
+import store from '../redux/store'
+import { employeeCreatedAction } from '../redux/employeeCreated'
 
+/**
+ * MODAL COMPONENT
+ * @returns {JSX}
+ */
 export default function DisplayModal() {
   const { isShowing: isLoginFormShowed, toggle: toggleLoginForm } = UseModal()
-  // const { isShowing: isRegistrationFormShowed, toggle: toggleRegistrationForm } = useModal()
 
+  useEffect(() => {
+    toggleLoginForm()
+  }, []);
+
+  function manewFonction() {
+    toggleLoginForm();
+    store.dispatch(employeeCreatedAction(false))
+  }
   return (
     <>
       <div className="App">
-        {/* <button className="modal-toggle" onClick={toggleLoginForm}>
-          Login
-        </button>
-        <button className="modal-toggle" onClick={toggleRegistrationForm}>
-          Register
-        </button> */}
-
-        <Modal isShowing={isLoginFormShowed} hide={toggleLoginForm} title="Login EXEMPLE">
-          <p>Je suis la modal</p>
+        <Modal isShowing={isLoginFormShowed} hide={manewFonction} title="Nouvel Employé">
+          <p>Vous venez d'ajouter un nouvel employé.</p>
         </Modal>
       </div>
 
