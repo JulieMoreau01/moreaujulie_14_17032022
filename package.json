@@ -2,6 +2,7 @@
   "name": "moreaujulie_14_17032022",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https:///JulieMoreau01.gitbub.io/moreaujulie_14_17032022",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
@@ -27,7 +28,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -54,6 +57,7 @@
     "eslint-plugin-n": "^15.2.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.29.4",
+    "gh-pages": "^3.2.3",
     "prettier": "^2.6.2"
   }
 }
