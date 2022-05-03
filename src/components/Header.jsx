@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import styles from '../styles/index.module.css'
+import styles from '../styles/header.module.css'
 
 /**
  * HEADER COMPONENT
@@ -13,7 +13,7 @@ function Header() {
   return (
     <header className={styles.title}>
       {pageName === '/employee-list' ? (
-        <Link to="/" onClick={() => setPageName('/')}>
+        <Link to="/" onClick={() => setPageName('/')} title="Home">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" className={styles.iconPeople}>
             <path
               stroke="white"
@@ -23,7 +23,7 @@ function Header() {
           </svg>
         </Link>
       ) : (
-        <Link to="/employee-list" onClick={() => setPageName('/employee-list')}>
+        <Link to="/employee-list" onClick={() => setPageName('/employee-list')} title="Employee">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" className={styles.iconPeople}>
             <path
               stroke="white"

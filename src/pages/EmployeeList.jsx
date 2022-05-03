@@ -1,5 +1,4 @@
 import React from 'react'
-import moment from 'moment'
 import Box from '@mui/material/Box'
 import IconButton from '@mui/material/IconButton'
 import ClearIcon from '@mui/icons-material/Clear'
@@ -8,8 +7,7 @@ import TextField from '@mui/material/TextField'
 import { DataGrid } from '@mui/x-data-grid'
 import { useSelector } from 'react-redux'
 import { dataFormSelector } from '../redux/selector'
-
-import styles from '../styles/index.module.css'
+import styles from '../styles/pages.module.css'
 
 /**
  * INDEX PAGE
@@ -66,14 +64,12 @@ function EmployeeList() {
   const rows = []
 
   for (let i = 0; i < nbRows; i += 1) {
-    const birthDateFormat = moment(user.rows[i].birth).format('DD/MM/YYYY')
-    const startDateFormat = moment(user.rows[i].startDate).format('DD/MM/YYYY')
     rows.push({
       id: i + 1,
       col1: user.rows[i].firstName,
       col2: user.rows[i].lastName,
-      col3: birthDateFormat,
-      col4: startDateFormat,
+      col3: user.rows[i].birth,
+      col4: user.rows[i].startDate,
       col5: user.rows[i].street,
       col6: user.rows[i].city,
       col7: user.rows[i].state,
@@ -81,7 +77,6 @@ function EmployeeList() {
       col9: user.rows[i].department
     })
   }
-  //`${selectedDate.getMonth()+1}/${selectedDate.getDate()}/${selectedDate.getFullYear()}`;
 
   const columns = [
     { field: 'col1', headerName: 'First Name', flex: 1 },

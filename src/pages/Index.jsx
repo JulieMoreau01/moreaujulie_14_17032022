@@ -1,17 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import DatePicker from 'react-datepicker'
-import { registerLocale } from 'react-datepicker/dist/es'
-import fr from 'date-fns/locale/fr'
 import states from '../utils/states'
 import store from '../redux/store'
 import { DisplayEmployeeCreated } from '../redux/selector'
 import { employeeCreatedAction } from '../redux/employeeCreated'
 import { dataFormAction } from '../redux/dataForm'
-
-import styles from '../styles/index.module.css'
-import 'react-datepicker/dist/react-datepicker.css'
-
-registerLocale('fr', fr)
+import styles from '../styles/pages.module.css'
 
 /**
  * INDEX PAGE
@@ -42,33 +35,14 @@ function Index() {
     department: ''
   })
 
-  // Get the infirmation from form
+  // Get the information from form
   const inputForm = (e) => {
-    console.log(e)
     e.persist()
     const { name, value } = e.target
-    console.log(name)
-    console.log(value)
     setSignInData((state) => ({
       ...state,
       [name]: value
     }))
-  }
-
-  // Get the infirmation from form
-  const inputFormBirth = (e) => {
-    console.log(e)
-    setSignInData((state) => ({
-      ...state,
-      birth: e
-    }))
-  }
-
-  // Get the infirmation from form
-  const inputFormStart = (e) => {
-    setSignInData((previousState) => {
-      return { ...previousState, startDate: e }
-    })
   }
 
   // Send The information
@@ -106,14 +80,12 @@ function Index() {
 
         <label htmlFor="date-of-birth">
           <span>Date of Birth</span>
-          <DatePicker onChange={inputFormBirth} locale={fr} autoComplete="off" value={signInData.birth} selected={signInData.birth} name="birth" id="date-of-birth" />
-          {/* <input id="date-of-birth" type="date" name="birth" onChange={inputForm} value={signInData.birth} /> */}
+          <input type="date" id="date-of-birth" name="birth" onChange={inputForm} value={signInData.birth} />
         </label>
 
         <label htmlFor="start-date">
           <span>Start Date</span>
-          <DatePicker onChange={inputFormStart} autoComplete="off" value={signInData.startDate} selected={signInData.startDate} name="startDate" id="start-date" />
-          {/* <input id="start-date" type="date" name="startDate" onChange={inputForm} value={signInData.startDate} /> */}
+          <input type="date" id="start-date" name="startDate" onChange={inputForm} value={signInData.startDate} />
         </label>
 
         <fieldset className={styles.address}>
