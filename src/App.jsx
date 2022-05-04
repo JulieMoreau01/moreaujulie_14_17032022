@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import React from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -8,7 +8,7 @@ import EmployeeList from './pages/EmployeeList'
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header />
       <Routes>
         <Route path="/" element={<Index />} />
@@ -16,7 +16,7 @@ function App() {
         <Route path="/employee-list" element={<EmployeeList />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
