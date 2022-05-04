@@ -13,7 +13,7 @@ function Header() {
   return (
     <header className={styles.title}>
       {pageName === '/employee-list' ? (
-        <Link to="/index" onClick={() => setPageName('/')} title="Home">
+        <Link to="/" onClick={() => setPageName('/')} title="Home">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" className={styles.iconPeople}>
             <path
               stroke="white"

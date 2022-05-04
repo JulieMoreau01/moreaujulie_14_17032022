@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/index" element={<Index />} />
+        <Route path="/" element={<Index />} />
         <Route path="*" element={<Error />} />
         <Route path="/employee-list" element={<EmployeeList />} />
       </Routes>
