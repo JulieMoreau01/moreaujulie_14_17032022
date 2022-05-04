@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import states from '../utils/states'
+import departments from '../utils/departments'
 import store from '../redux/store'
 import { DisplayEmployeeCreated } from '../redux/selector'
 import { employeeCreatedAction } from '../redux/employeeCreated'
@@ -20,7 +21,14 @@ function Index() {
       option.text = state.name
       stateSelect.appendChild(option)
     })
-  })
+    const departmentSelect = document.getElementById('department')
+    departments.forEach((department) => {
+      const option = document.createElement('option')
+      option.value = department.name
+      option.text = department.name
+      departmentSelect.appendChild(option)
+    })
+  }, [])
 
   // initial state
   const [signInData, setSignInData] = useState({
@@ -118,11 +126,6 @@ function Index() {
           <span>Department</span>
           <select name="department" id="department" onChange={inputForm} value={signInData.department}>
             <option>Choose a department</option>
-            <option>Sales</option>
-            <option>Marketing</option>
-            <option>Engineering</option>
-            <option>Human Resources</option>
-            <option>Legal</option>
           </select>
         </label>
         <button type="submit" className={styles.buttonIndex}>
