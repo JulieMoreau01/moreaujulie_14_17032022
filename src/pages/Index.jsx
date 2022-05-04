@@ -102,9 +102,9 @@ function Index() {
           </label>
 
           <label htmlFor="state">
-            <span>Etat</span>
+            <span>State</span>
             <select name="state" id="state" onChange={inputForm} value={signInData.state}>
-              Je suis un select
+              <option>Choose a State</option>
             </select>
           </label>
 
@@ -117,6 +117,7 @@ function Index() {
         <label htmlFor="department">
           <span>Department</span>
           <select name="department" id="department" onChange={inputForm} value={signInData.department}>
+            <option>Choose a department</option>
             <option>Sales</option>
             <option>Marketing</option>
             <option>Engineering</option>
