@@ -2,12 +2,12 @@
 
 OPENCLASSROOMS Project 14 : Faites passer une librairie jQuery vers React
 
-![HRNet](https://raw.githubusercontent.com/JulieMoreau01/moreaujulie_14_18032022/main/src/assets/readme.png)
+![HRNet](https://raw.githubusercontent.com/JulieMoreau01/moreaujulie_14_17032022/main/src/assets/readme.png)
 
 # DEPENDENCIES
 
-- Yarn [v1.22.5](https://yarnpkg.com/).
-- React [v18 ](https://fr.reactjs.org/).
+- Yarn [v1.22.5] (https://yarnpkg.com/).
+- React [v18] (https://fr.reactjs.org/).
 - React Router [v6.3.0](https://reactrouter.com/).
   `yarn add react-router-dom`
 - React redux [v4.2.0"] (https://redux.js.org/)
@@ -17,7 +17,7 @@ OPENCLASSROOMS Project 14 : Faites passer une librairie jQuery vers React
 - Mui UI library - styles [5.6.0] (https://mui.com/styles/basics/#main-content)
 - Mui UI library - x-data-grid [5.6.1] (https://mui.com/x/api/data-grid/data-grid/)
 - Mui UI library - x-data-grid-generator [5.8.0] (https://mui.com/x/api/data-grid/data-grid/)
-- Text editor: [Visual Studio Code](https://code.visualstudio.com/).
+- Text editor: [Visual Studio Code] (https://code.visualstudio.com/).
 - Modal-openc-library [4.0.0]
 
 This project was bootstrapped with [Creat React App](https://create-react-app.dev/).
