@@ -18,6 +18,7 @@ function escapeRegExp(value) {
   return value.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&')
 }
 
+// SEARCH BAR ON TOP OF TABLE
 function QuickSearchToolbar(props) {
   return (
     <Box
@@ -63,6 +64,7 @@ function EmployeeList() {
   const nbRows = user.rows.length
   const rows = []
 
+  // FILL THE TABLE
   for (let i = 0; i < nbRows; i += 1) {
     rows.push({
       id: i + 1,
@@ -78,6 +80,7 @@ function EmployeeList() {
     })
   }
 
+  // FILL THE HEAD TABLE
   const columns = [
     { field: 'col1', headerName: 'First Name', flex: 1 },
     { field: 'col2', headerName: 'Last Name', flex: 1 },
@@ -98,7 +101,6 @@ function EmployeeList() {
     setSearchText(searchValue)
     const searchRegex = new RegExp(escapeRegExp(searchValue), 'i')
     const filteredRows = rows.filter((row) => {
-      // console.log(row)
       return Object.keys(row).some((field) => {
         return searchRegex.test(row[field].toString())
       })
@@ -119,7 +121,6 @@ function EmployeeList() {
         columns={columns}
         components={{ Toolbar: QuickSearchToolbar }}
         className={styles.tableSize}
-        // hideFooter
         componentsProps={{
           toolbar: {
             value: searchText,

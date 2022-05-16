@@ -3,7 +3,7 @@ import UseModal from 'modal-openc-library/dist/UseModal'
 import Modal from 'modal-openc-library/dist/Modal'
 import store from '../redux/store'
 import { employeeCreatedAction } from '../redux/employeeCreated'
-import 'modal-openc-library/dist/Modal.css'
+import 'modal-openc-library/dist/Modal.module.css'
 
 /**
  * MODAL COMPONENT USING modal-openc-library
@@ -16,13 +16,14 @@ export default function DisplayModal() {
     toggleLoginForm()
   }, [])
 
-  function manewFonction() {
+  function hideModal() {
     toggleLoginForm()
     store.dispatch(employeeCreatedAction(false))
   }
+
   return (
     <div className="App">
-      <Modal isShowing={isLoginFormShowed} hide={manewFonction} title="Nouvel Employé">
+      <Modal isShowing={isLoginFormShowed} hide={hideModal} title="Nouvel Employé">
         <p>Vous venez d'ajouter un nouvel employé.</p>
       </Modal>
     </div>

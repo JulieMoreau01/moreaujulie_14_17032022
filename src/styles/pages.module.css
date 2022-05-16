@@ -1,3 +1,4 @@
+/* CSS for pages */
 * {
   box-sizing: border-box;
 }
@@ -103,4 +104,10 @@ legend {
 
 .tableSize {
   width: 100%;
+}
+
+.error {
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
 }

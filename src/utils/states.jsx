@@ -1,3 +1,4 @@
+// Content For Select States in Formulaire in index page
 const states = [
   {
     name: 'Alabama',

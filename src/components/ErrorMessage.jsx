@@ -1,12 +1,16 @@
 import React from 'react'
-// import styles from '../styles/error.module.css'
+import styles from '../styles/pages.module.css'
 
 /**
  * ERROR MESSAGE COMPONENT
  * @returns {JSX}
  */
 function ErrorMessage() {
-  return <p>404 Error</p>
+  return (
+    <div className={styles.container}>
+      <p className={styles.error}>404 Error</p>
+    </div>
+  )
 }
 
 export default ErrorMessage

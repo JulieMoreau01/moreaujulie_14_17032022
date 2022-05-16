@@ -7,17 +7,18 @@ OPENCLASSROOMS Project 14 : Faites passer une librairie jQuery vers React
 # DEPENDENCIES
 
 - Yarn [v1.22.5](https://yarnpkg.com/).
-- React [v17.0.2 ](https://fr.reactjs.org/).
-- React Router [v6.2.1](https://reactrouter.com/).
+- React [v18 ](https://fr.reactjs.org/).
+- React Router [v6.3.0](https://reactrouter.com/).
   `yarn add react-router-dom`
-- React redux [v7.2.6] (https://redux.js.org/)
-- Redux Toolkit [1.7.2] (https://redux-toolkit.js.org/)
+- React redux [v4.2.0"] (https://redux.js.org/)
+- Redux Toolkit [1.8.1] (https://redux-toolkit.js.org/)
 - Mui UI library - material [5.6.0] (https://mui.com/)
 - Mui UI library - icons-material [5.6.0] (https://mui.com/components/material-icons/)
 - Mui UI library - styles [5.6.0] (https://mui.com/styles/basics/#main-content)
 - Mui UI library - x-data-grid [5.6.1] (https://mui.com/x/api/data-grid/data-grid/)
 - Mui UI library - x-data-grid-generator [5.8.0] (https://mui.com/x/api/data-grid/data-grid/)
 - Text editor: [Visual Studio Code](https://code.visualstudio.com/).
+- Modal-openc-library [4.0.0]
 
 This project was bootstrapped with [Creat React App](https://create-react-app.dev/).
 
