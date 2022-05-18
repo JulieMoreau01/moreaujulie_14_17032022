@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react'
-import UseModal from 'modal-openc-library/dist/UseModal'
+import React from 'react'
 import Modal from 'modal-openc-library/dist/Modal'
 import store from '../redux/store'
 import { employeeCreatedAction } from '../redux/employeeCreated'
@@ -10,22 +9,13 @@ import 'modal-openc-library/dist/Modal.module.css'
  * @returns {JSX}
  */
 export default function DisplayModal() {
-  const { isShowing: isLoginFormShowed, toggle: toggleLoginForm } = UseModal()
-
-  useEffect(() => {
-    toggleLoginForm()
-  }, [])
-
   function hideModal() {
-    toggleLoginForm()
     store.dispatch(employeeCreatedAction(false))
   }
 
   return (
-    <div className="App">
-      <Modal isShowing={isLoginFormShowed} hide={hideModal} title="Nouvel Employé">
-        <p>Vous venez d'ajouter un nouvel employé.</p>
-      </Modal>
-    </div>
+    <Modal isShowing={true} hide={hideModal} title="Nouvel Employé" size="small">
+      <p>Vous venez d'ajouter un nouvel employé.</p>
+    </Modal>
   )
 }

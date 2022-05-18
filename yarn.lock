@@ -7111,10 +7111,10 @@
   "resolved" "https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz"
   "version" "1.0.4"
 
-"modal-openc-library@^5.0.0":
-  "integrity" "sha512-+6nu2nGZDpEVJkcFpXllzymNp1wTQsuQ5EFZQuFTx/8V6RFRMWKGTo8V9twHPF5ZsOLLXTheS068CHyJAvYQHw=="
-  "resolved" "https://registry.npmjs.org/modal-openc-library/-/modal-openc-library-5.0.0.tgz"
-  "version" "5.0.0"
+"modal-openc-library@^7.0.0":
+  "integrity" "sha512-LSLRlwsfIanBel1194W+6SX0uB0Pr30Nvwu4omMHPsfaedJS8b8cWezjrQl+1E03Y6MAS8LYAIGG4SdXgR742g=="
+  "resolved" "https://registry.npmjs.org/modal-openc-library/-/modal-openc-library-7.0.0.tgz"
+  "version" "7.0.0"
   dependencies:
     "@testing-library/jest-dom" "^5.16.4"
     "@testing-library/react" "^13.1.1"

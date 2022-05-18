@@ -110,7 +110,6 @@ function EmployeeList() {
 
   React.useEffect(() => {
     setRowsNew(rowsNew)
-    console.log(rowsNew)
   }, [rowsNew])
 
   return (
