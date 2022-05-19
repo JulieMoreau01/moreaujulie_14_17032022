@@ -1,5 +1,6 @@
 import React from 'react'
 import Box from '@mui/material/Box'
+import moment from 'moment'
 import IconButton from '@mui/material/IconButton'
 import ClearIcon from '@mui/icons-material/Clear'
 import SearchIcon from '@mui/icons-material/Search'
@@ -70,8 +71,8 @@ function EmployeeList() {
       id: i + 1,
       col1: user.rows[i].firstName,
       col2: user.rows[i].lastName,
-      col3: user.rows[i].birth,
-      col4: user.rows[i].startDate,
+      col3: moment(user.rows[i].birth).format('DD/MM/YYYY'),
+      col4: moment(user.rows[i].startDate).format('DD/MM/YYYY'),
       col5: user.rows[i].street,
       col6: user.rows[i].city,
       col7: user.rows[i].state,

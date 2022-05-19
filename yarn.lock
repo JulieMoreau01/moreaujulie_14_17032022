@@ -7111,16 +7111,21 @@
   "resolved" "https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz"
   "version" "1.0.4"
 
-"modal-openc-library@^7.0.0":
-  "integrity" "sha512-LSLRlwsfIanBel1194W+6SX0uB0Pr30Nvwu4omMHPsfaedJS8b8cWezjrQl+1E03Y6MAS8LYAIGG4SdXgR742g=="
-  "resolved" "https://registry.npmjs.org/modal-openc-library/-/modal-openc-library-7.0.0.tgz"
-  "version" "7.0.0"
+"modal-openc-library@^8.0.0":
+  "integrity" "sha512-Z4+A80lmZs8RWdSdYtoSvkEmDEVhnrKlSxR77TaaWjhKflL/mTtqD+0LEc+yDaFm1ZB3Br/hlGpiQDuqmFClMQ=="
+  "resolved" "https://registry.npmjs.org/modal-openc-library/-/modal-openc-library-8.0.0.tgz"
+  "version" "8.0.0"
   dependencies:
     "@testing-library/jest-dom" "^5.16.4"
     "@testing-library/react" "^13.1.1"
     "@testing-library/user-event" "^13.5.0"
     "styled-components" "^5.3.5"
     "web-vitals" "^2.1.4"
+
+"moment@^2.29.3":
+  "integrity" "sha512-c6YRvhEo//6T2Jz/vVtYzqBzwvPT95JBQ+smCytzf7c50oMZRsR/a4w88aD34I+/QVSfnoAnSBFPJHItlOMJVw=="
+  "resolved" "https://registry.npmjs.org/moment/-/moment-2.29.3.tgz"
+  "version" "2.29.3"
 
 "ms@^2.0.0", "ms@^2.1.2":
   "integrity" "sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA=="

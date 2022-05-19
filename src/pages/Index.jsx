@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import states from '../utils/states'
 import departments from '../utils/departments'
 import store from '../redux/store'
-import { DisplayEmployeeCreated } from '../redux/selector'
+import DisplayModal from '../components/Modal'
 import { employeeCreatedAction } from '../redux/employeeCreated'
 import { dataFormAction } from '../redux/dataForm'
 import styles from '../styles/pages.module.css'
@@ -134,7 +134,7 @@ function Index() {
           Save
         </button>
       </form>
-      <DisplayEmployeeCreated />
+      <DisplayModal />
     </div>
   )
 }
